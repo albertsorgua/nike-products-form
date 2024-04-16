@@ -1,0 +1,79 @@
+/* Estilo para el contenedor principal de productos */
+.product-container {
+  display: flex;
+}
+
+.title {
+  margin: 20px;
+}
+
+.product-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-item div {
+  margin-bottom: 5px;
+}
+
+.product-item .image {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.product-item .image:hover {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.product-item .name {
+  font-weight: bold;
+}
+
+.product-item .price {
+  color: #007bff;
+}
+
+.product-item .category {
+  color: #28a745;
+}
+
+.product-item .sale {
+  color: #dc3545;
+}
+
+/* Estilo para el mensaje de "No products added yet" */
+.no-products-message {
+  margin: 20px;
+  font-style: italic;
+  color: #888;
+}
+
+/* Estilos para el contenedor del input */
+.search-container {
+  margin: 20px;
+}
+
+/* Estilos para el input de búsqueda */
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilos para el placeholder */
+.search-input::placeholder {
+  color: #999;
+}
+
+/* Estilos para cuando el input está enfocado */
+.search-input:focus {
+  outline: none;
+  border-color: #66afe9;
+  box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
+}

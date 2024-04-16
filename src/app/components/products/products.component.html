@@ -1,0 +1,22 @@
+<div class="search-container">
+    <input type="text" class="search-input" #searchInput (input)="search(searchInput.value)" placeholder="Search products...">
+</div>
+
+<h2 class="title">Products</h2>
+
+<div *ngIf="products.length > 0; else noProducts" class="product-container">
+    <div *ngFor="let product of products" class="product-item">
+        <div *ngIf="product.image !== undefined && product.image.trim() !== ''" class="product-image">
+            <img [src]="product.image" alt="product image" class="image">
+        </div>
+        <div class="name">{{ product.name }}</div>
+        <div class="description">{{ product.description }}</div>
+        <div class="price">{{ product.price }}€</div>
+        <div class="category">Category: {{ product.category }}</div>
+        <div class="sale" *ngIf="product.sale">Available!</div>
+    </div>
+</div>
+
+<ng-template #noProducts>
+    <p class="no-products-message">No products added yet.</p>
+</ng-template>
