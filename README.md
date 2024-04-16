@@ -7,7 +7,7 @@ Práctica 3 de Angular de la Unidad Formativa 3 del Módulo 6 basada en la creac
 - Angular CLI
 
 ## Instalación
-1. Clona el repositorio: git clone https://github.com/tu-usuario/tu-proyecto.git
+1. Clona el repositorio: git clone https://github.com/albertsorgua/nike-products-form.git
 2. Instala las dependencias: npm install
 
 ## Uso
